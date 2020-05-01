@@ -1,0 +1,393 @@
+*
+{
+    background-color: #0f222b;
+}
+ @font-face 
+{
+  font-family: "mr-robot";
+  src: url("mr_robot-webfont.ttf");
+  font-weight:100;
+}
+@font-face
+{
+    font-family:"sevensegment";
+    src:url(seven-segment-webfont.ttf);
+    font-weight:100''
+}
+.websitename
+{
+    position: absolute;
+    font-family: mr-robot;
+    font-weight: 100;
+    color:red;
+    font-size: 40px;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+p
+{
+    font-family: sevensegment;
+    font-weight: 100;
+    color: green;
+    font-size: 50px;
+}
+a{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top:30%;
+  left: 10%;
+  width: 190px;
+  height: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  line-height: 29px;
+  color:white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sevensegment;
+  letter-spacing: 4px;
+}
+a::before,a::after,span::after,span::before
+{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ff0;
+  transition: 0.4s;
+  mix-blend-mode:color-burn;
+}
+a::before
+{
+  background-color: rgba(108, 249, 132, 1);
+  top:-2px;
+  left:-2px;
+}
+a::after
+{
+  background-color: rgba(108, 249, 132, 1);
+  top:-2px;
+  right:-2px;
+}
+span::after
+{
+  background-color: rgba(108, 249, 132, 1);
+  bottom:-2px;
+  right:-2px;
+}
+span::before
+{
+  background-color: rgba(108, 249, 132, 1);
+  bottom:-2px;
+  left:-2px;
+}
+a:hover::before, a:hover::after,
+a:hover span::before,
+a:hover span::after
+{
+  width: calc(180px/2);
+  height: calc(25px/2);
+}
+.menu 
+{    
+  border-right: 2px solid rgba(108, 249, 132, 1);
+  background-color:#0f222b;
+  color: aliceblue;
+  margin-right: 80%;
+  padding-bottom: 100%;
+}
+.radr
+{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 9px solid #0f222b;
+    background: #0f222b url();
+    background-size: cover;
+}
+.radr:before
+{
+    content: '';
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    width: 10px;
+    height: 10px;
+    background: #00ff00;
+    border-radius: 50%;
+    filter: blur(2px);
+    animation: glow 1s linear infinite;
+}
+.radr:after
+{
+    content: '';
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    width: 10px;
+    height: 10px;
+    background: #00ff00;
+    border-radius: 50%;
+    filter: blur(2px);
+    animation: glow 1s linear infinite;
+}
+.radr li:nth-child(1),
+.radr li:nth-child(2),
+.radr li:nth-child(3),
+.radr li:nth-child(4)
+{
+    list-style: none;
+    position:absolute;
+    top: 50%;
+    height: 1px;
+    width: 100%;
+    background: rgba(108, 249, 132, 1);
+    border-radius: 50%;
+}
+.radr li:nth-child(2)
+{
+    transform: rotate(90deg);
+}
+.radr li:nth-child(3)
+{
+    transform: rotate(45deg)
+}
+.radr li:nth-child(4)
+{
+    transform: rotate(-45deg)
+}
+.radr li:nth-child(5),
+.radr li:nth-child(6),
+.radr li:nth-child(7)
+{
+    list-style: none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgba(0,255,0,1);
+    background: transparent;
+    border-radius: 50%;
+}
+.radr li:nth-child(5)
+{
+    width: 90px;
+    height: 90px;
+}
+.radr li:nth-child(6)
+{
+    width: 140px;
+    height: 140px;
+}
+.radr li:nth-child(7)
+{
+    width: 190px;
+    height: 190px;
+}
+.radr li:nth-child(8)
+{
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 95px;
+    transform-origin: top left;
+    background: linear-gradient(45deg,#00ff00 0%,transparent 100%);
+    animation: animate 2s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes glow
+{
+    0%
+    {
+        opacity: 0;
+    }
+        50%
+    {
+        opacity: 1;
+    }
+        100%
+    {
+        opacity: 0;
+    }
+}
+svg
+{
+    position: absolute;
+    margin-left: 59%;
+    margin-top: 50%;
+}
+.yellowboxintro
+{
+    font-family: sevensegment;
+    color: rgba(108, 249, 132, 1);
+    position: absolute;
+    margin-top: -40%;
+    margin-left: 61%;
+}
+.yellowtash
+{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 50%;
+}
+.yellowtashintro
+{
+    font-family: sevensegment;
+    color: rgba(108, 249, 132, 1);
+    position: absolute;
+    margin-top: -40%;
+    margin-left: 22%;
+}
+.adbox1
+{
+    position: absolute;
+    margin-left:-0.5%;
+    margin-top: 50%;
+}
+.adbox2
+{
+    position: absolute;
+    margin-left:-0.5%;
+    margin-top: 70%;
+}
+h1
+{
+    display: block;
+}
+.techbox
+{
+    display: block;
+    font-family: sevensegment;
+    color: aliceblue;
+    position: absolute;
+    font-size: 100%;
+    box-sizing: border-box;
+    border-style: solid;
+    height: 155px;
+    padding: 40px;
+    border-width: 2px;
+    border-color:  rgba(108, 249, 132, 1);
+    margin-left: 21%;
+    margin-top: 39%;
+}
+.techbox:hover, h1:hover
+{
+    background-color: aqua;
+}
+.artbox
+{
+    font-family: sevensegment;
+    color: aliceblue;
+    position: absolute;
+    box-sizing: border-box;
+    border-style: solid;
+    height: 155px;
+    padding: 40px;
+    border-width: 2px;
+    border-color:  rgba(108, 249, 132, 1);
+    margin-left: 44%;
+    margin-top: 39%;
+}
+.artbox:hover, h1:hover
+{
+    
+    background-color: aqua;
+}
+.lifebox
+{
+    font-family: sevensegment;
+    color: aliceblue;
+    position: absolute;
+    box-sizing: border-box;
+    border-style: solid;
+    height: 155px;
+    padding: 40px;
+    border-width: 2px;
+    border-color:  rgba(108, 249, 132, 1);
+    margin-left: 87%;
+    margin-top: 39%;
+}
+.lifebox:hover, h1:hover
+{
+    
+    background-color: aqua;
+}
+.logybox
+{
+    font-family: sevensegment;
+    color: aliceblue;
+    position: absolute;
+    box-sizing: border-box;
+    border-style: solid;
+    height: 155px;
+    padding: 40px;
+    border-width: 2px;
+    border-color:  rgba(108, 249, 132, 1);
+    margin-left: 65%;
+    margin-top: 39%;
+}
+.logybox:hover, h1:hover
+{
+    
+    background-color: aqua;
+}
+.myinfo
+{
+    color: aliceblue;
+    position: absolute;
+    box-sizing: border-box;
+    border-style: solid;
+    height: 155px;
+    padding: 40px;
+    padding-left: 73%;
+    padding-bottom: 20%;
+    border-width: 2px;
+    border-color:  rgba(108, 249, 132, 1);
+    margin-left: 21%;
+    margin-top: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
