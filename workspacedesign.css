@@ -1,0 +1,32 @@
+.base {
+  display: inline-block;
+  margin-left: 145px;
+  position: absolute;
+  text-align: center;
+}
+
+.matrix {
+  width: 1050px;
+  height: 210px;
+}
+
+.led {
+  cursor:pointer;
+  display:inline-block;
+  margin: 5px;
+  margin-bottom: 0px;
+  width: 9px;
+  height: 9px;
+  border-radius: 10px;
+  background-color: red;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, .75);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, .75);
+  box-shadow: 0px 0px 15px 5px rgba(255, 0, 0, .75);
+}
+
+.off{
+  background-color: #222222;
+   -webkit-box-shadow: 0px 0px 0px 0px rgba(255, 255, 190, .75);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(255, 255, 190, .75);
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 190, .75);
+}
